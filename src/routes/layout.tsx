@@ -6,6 +6,8 @@ import Footer from '~/components/starter/footer/footer';
 
 import styles from './styles.css?inline';
 
+/* NOTE: Con el hook de routeLoader$, podemos obtener el tiempo del servidor
+cada que este layout se renderiza. */
 export const useServerTimeLoader = routeLoader$(() => {
   return {
     date: new Date().toISOString(),
@@ -14,6 +16,7 @@ export const useServerTimeLoader = routeLoader$(() => {
 
 export default component$(() => {
   useStyles$(styles);
+
   return (
     <>
       <Header />
