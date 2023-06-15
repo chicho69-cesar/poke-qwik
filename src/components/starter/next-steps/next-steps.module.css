@@ -16,9 +16,11 @@
   width: 100%;
   word-break: break-word;
 }
+
 .gettingstarted .hint {
   font-size: 0.8rem;
 }
+
 .gettingstarted .hint a {
   color: var(--qwik-dark-purple);
 }
@@ -27,9 +29,11 @@
   .gettingstarted {
     height: 180px;
   }
+
   .gettingstarted .intro {
     font-size: 1.2rem;
   }
+  
   .gettingstarted .hint {
     font-size: 1rem;
   }
