@@ -14,7 +14,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Aplicación de Pokedex para aprender Qwik!',
+      content: 'Pokedex Aplication to Learn Qwik!',
     },
   ],
 };
