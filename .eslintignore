@@ -1,14 +1,19 @@
+# Log documents
 **/*.log
 **/.DS_Store
 *.
 .vscode/settings.json
 .history
 .yarn
+
+# Bazel files
 bazel-*
 bazel-bin
 bazel-out
 bazel-qwik
 bazel-testlogs
+
+# Dist
 dist
 dist-dev
 lib
@@ -21,12 +26,16 @@ tsc-out
 tsdoc-metadata.json
 target
 output
-rollup.config.js
 build
+dist
+
+# Editor
 .cache
 .vscode
 .rollup.cache
-dist
+rollup.config.js
+
+# Configs
 tsconfig.tsbuildinfo
 vite.config.ts
 *.spec.tsx
