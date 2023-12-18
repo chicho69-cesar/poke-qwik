@@ -10,4 +10,4 @@ export default component$(() => {
       <Slot />
     </div>
   );
-});
+})

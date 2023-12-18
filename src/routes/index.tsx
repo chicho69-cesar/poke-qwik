@@ -1,13 +1,13 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { component$ } from '@builder.io/qwik'
+import type { DocumentHead } from '@builder.io/qwik-city'
 
 export default component$(() => {
   return (
     <>
       <h1>Hello World!!!</h1>
     </>
-  );
-});
+  )
+})
 
 export const head: DocumentHead = {
   title: 'Poke Qwik',
@@ -17,4 +17,4 @@ export const head: DocumentHead = {
       content: 'Pokedex Aplication to Learn Qwik!',
     },
   ],
-};
+}

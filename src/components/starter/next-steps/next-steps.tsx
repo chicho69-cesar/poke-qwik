@@ -1,5 +1,5 @@
-import { component$, $, useOnWindow, useSignal } from '@builder.io/qwik';
-import styles from './next-steps.module.css';
+import { component$, $, useOnWindow, useSignal } from '@builder.io/qwik'
+import styles from './next-steps.module.css'
 
 export const GETTING_STARTED_STEPS = [
   {
@@ -26,19 +26,19 @@ export const GETTING_STARTED_STEPS = [
     message: '<b>Congratulations!</b> You are now familiar with the basics! 🎉',
     hint: "If you need further info on how to use qwik, have a look at <a href='https://qwik.builder.io' target='_blank'>qwik.builder.io</a> or join the <a href='https://qwik.builder.io/chat' target='_blank'>Discord channel</a>.",
   },
-];
+]
 
 export default component$(() => {
-  const gettingStartedStep = useSignal(0);
+  const gettingStartedStep = useSignal(0)
 
   useOnWindow(
     'keydown',
     $((e) => {
       if ((e as KeyboardEvent).key === 'Alt') {
-        gettingStartedStep.value = 1;
+        gettingStartedStep.value = 1
       }
     })
-  );
+  )
 
   return (
     <div class="container container-purple container-center">
@@ -47,16 +47,19 @@ export default component$(() => {
         <br />
         <span class="highlight">qwik intro</span>?
       </h2>
+
       <div class={styles.gettingstarted}>
         <div
           class={styles.intro}
           dangerouslySetInnerHTML={GETTING_STARTED_STEPS[gettingStartedStep.value].message}
         />
+
         <span
           class={styles.hint}
           dangerouslySetInnerHTML={GETTING_STARTED_STEPS[gettingStartedStep.value].hint}
         />
       </div>
+      
       {gettingStartedStep.value + 1 < GETTING_STARTED_STEPS.length ? (
         <button class="button-dark" onClick$={() => gettingStartedStep.value++}>
           Continue with Step {gettingStartedStep.value + 2} of {GETTING_STARTED_STEPS.length}
@@ -67,5 +70,5 @@ export default component$(() => {
         </button>
       )}
     </div>
-  );
-});
+  )
+})
