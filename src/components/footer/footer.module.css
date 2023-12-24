@@ -1,3 +1,8 @@
+.footer {
+  position: relative;
+  bottom: 0;
+}
+
 .anchor {
   color: white !important;
   display: block;

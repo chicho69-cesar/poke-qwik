@@ -1,4 +1,9 @@
-export const QwikLogo = ({ width = 100, height = 35 }: { width?: number; height?: number }) => (
+interface Props {
+  width?: number
+  height?: number
+}
+
+export const QwikLogo = ({ width = 100, height = 35 }: Props) => (
   <svg
     width={width}
     height={height}

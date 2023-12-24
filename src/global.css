@@ -1,9 +1,9 @@
 /**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles. No matter which components are in the page or matching route,
- * the styles in here will be applied to the Document, without any sort of CSS scoping.
- *
+ * ¿QUÉ ES ESTE ARCHIVO?
+ * 
+ * Los son estilos globales aplicados. No existen problemas con los componentes de las paginas
+ * o la ruta actual, los estilos que están aquí se aplican al Document. sin ningún problema
+ * de CSS scoping.
  */
 
 :root {
@@ -33,13 +33,6 @@ body {
   line-height: inherit;
 }
 
-/**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles. No matter which components are in the page or matching route,
- * the styles in here will be applied to the Document, without any sort of CSS scoping.
- *
- */
 html {
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;

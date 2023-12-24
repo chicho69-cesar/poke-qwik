@@ -10,11 +10,11 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = {
-  title: 'Poke Qwik',
+  title: 'Pokedex | The best pokemon game',
   meta: [
     {
       name: 'description',
-      content: 'Pokedex Aplication to Learn Qwik!',
+      content: 'Pokedex Aplication to play with pokemons.',
     },
   ],
 }
